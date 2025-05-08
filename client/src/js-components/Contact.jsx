@@ -9,7 +9,7 @@ import { Textarea } from "../components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { Button } from "../components/ui/button";
 import { useToast } from "../hooks/use-toast";
-import { apiRequest } from "../lib/queryClient";
+import { apiRequest } from "../lib/queryClient.js";
 import { useMutation } from "@tanstack/react-query";
 import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 

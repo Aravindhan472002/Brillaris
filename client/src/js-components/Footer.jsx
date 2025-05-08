@@ -1,8 +1,8 @@
 import React from "react";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
-import LogoSVG from "../assets/LogoSVG";
-import { scrollToElement } from "../lib/utils";
+import LogoSVG from "./LogoSVG.jsx";
+import { scrollToElement } from "../lib/utils.js";
 import { Send } from "lucide-react";
 import { motion } from "framer-motion";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../components/ui/button";
 import { motion } from "framer-motion";
-import { scrollToElement } from "../lib/utils";
+import { scrollToElement } from "../lib/utils.js";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {

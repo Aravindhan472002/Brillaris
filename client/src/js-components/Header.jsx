@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
-import LogoSVG from "../assets/LogoSVG";
+import LogoSVG from "./LogoSVG.jsx";
 import { AlignJustify, X, Moon, Sun } from "lucide-react";
-import { scrollToElement } from "../lib/utils";
-import { useTheme } from "../components/ui/theme-provider";
+import { scrollToElement } from "../lib/utils.js";
+import { useTheme } from "../components/ui/theme-provider.jsx";
 
 const navItems = [
   { name: "Home", id: "home" },

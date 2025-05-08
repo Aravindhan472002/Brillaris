@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { motion } from "framer-motion";
-import { scrollToElement } from "../lib/utils";
+import { scrollToElement } from "../lib/utils.js";
 import { Circle, ArrowRight } from "lucide-react";
 
 // Define services data directly in component

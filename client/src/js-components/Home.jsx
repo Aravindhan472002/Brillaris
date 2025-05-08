@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./Header";
-import Hero from "./Hero";
-import About from "./About";
-import Services from "./Services";
-import Team from "./Team";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Header from "./Header.jsx";
+import Hero from "./Hero.jsx";
+import About from "./About.jsx";
+import Services from "./Services.jsx";
+import Team from "./Team.jsx";
+import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx";
 import { Helmet } from "react-helmet";
 
 const Home = () => {

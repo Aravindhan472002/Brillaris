@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "../lib/queryClient";
+import { queryClient } from "../lib/queryClient.js";
 import { Toaster } from "../components/ui/toaster";
 import { TooltipProvider } from "../components/ui/tooltip";
-import NotFound from "./NotFound";
-import Home from "./Home";
+import NotFound from "./NotFound.jsx";
+import Home from "./Home.jsx";
 
 function Router() {
   return (
