@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  
+  /* Primary: Brand Green - from the logo */
+  --primary: 153 60% 14%;
+  --primary-foreground: 0 0% 98%;
+  
+  /* Secondary: Brand Gold/Orange - from the logo */
+  --secondary: 39 100% 50%;
+  --secondary-foreground: 240 5.9% 10%;
+  
+  /* Accent: Brand Blue - from the logo */
+  --accent: 222 100% 19%;
+  --accent-foreground: 0 0% 98%;
+  
+  /* Destructive */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  
+  /* Ring */
+  --ring: 222 100% 19%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 0 0% 98%;
+  --muted: 223 47% 15%;
+  --muted-foreground: 215 20% 75%;
+  --popover: 222 47% 11%;
+  --popover-foreground: 0 0% 98%;
+  --card: 222 47% 11%;
+  --card-foreground: 0 0% 98%;
+  --border: 223 47% 15%;
+  --input: 223 47% 15%;
+  
+  /* Primary: Brand Green */
+  --primary: 153 50% 20%;
+  --primary-foreground: 0 0% 98%;
+  
+  /* Secondary: Brand Gold/Orange */
+  --secondary: 39 95% 55%;
+  --secondary-foreground: 240 5.9% 10%;
+  
+  /* Accent: Brand Blue */
+  --accent: 222 80% 30%;
+  --accent-foreground: 0 0% 98%;
+  
+  /* Destructive */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  
+  /* Ring */
+  --ring: 215 20% 65%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .nav-link {
+    @apply relative;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] block absolute bottom-0 left-0 w-0 h-0.5 bg-secondary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .service-card {
+    @apply transition-all duration-300;
+  }
+  
+  .service-card:hover {
+    @apply transform -translate-y-1 shadow-lg;
+  }
+
+  .gradient-bg-blue {
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent)/0.8) 100%);
+  }
+
+  .gradient-bg-green {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary)/0.8) 100%);
+  }
+
+  .gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  }
+
+  .border-gradient {
+    border-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--secondary))) 1;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
