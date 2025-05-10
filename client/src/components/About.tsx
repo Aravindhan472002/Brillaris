@@ -36,7 +36,7 @@ const About: React.FC = () => {
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl blur-xl opacity-70 dark:opacity-30"></div>
             <img 
-              src="/images/about-content.png" 
+              src="/images/brillaris-global.png" 
               alt="About Brillaris Global" 
               className="rounded-lg shadow-xl w-full h-auto object-cover relative z-10"
             />

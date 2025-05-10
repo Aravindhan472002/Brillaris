@@ -2,11 +2,12 @@ import React from "react";
 import Header from "./Header.jsx";
 import Hero from "./Hero.jsx";
 import About from "./About.jsx";
-import Services from "./Services.jsx";
+import OurSolution from "./OurSolution.jsx";
 import Team from "./Team.jsx";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 import { Helmet } from "react-helmet";
+import Services from "./NewServices.jsx";
 
 const Home = () => {
   return (
@@ -25,9 +26,11 @@ const Home = () => {
         <main>
           <Hero />
           <About />
-          <Services />
+          <OurSolution />
+          <Services/>
           <Team />
           <Contact />
+
         </main>
         <Footer />
       </div>

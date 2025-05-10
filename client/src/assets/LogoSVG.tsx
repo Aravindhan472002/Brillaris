@@ -54,35 +54,6 @@ const LogoSVG: React.FC<LogoSVGProps> = ({ className }) => {
         />
       </g>
       
-      {/* GLOBAL Text */}
-      <g>
-        <text
-          x="120"
-          y="50"
-          fontSize="10"
-          fontFamily="Arial"
-          fontWeight="bold"
-          fill={brandGreen}
-          textAnchor="middle"
-        >
-          G L O B A L
-        </text>
-      </g>
-      
-      {/* Tagline */}
-      <g>
-        <text
-          x="120"
-          y="60"
-          fontSize="8"
-          fontFamily="Arial"
-          fill={brandGreen}
-          textAnchor="middle"
-        >
-          educate | innovate | elevate
-        </text>
-      </g>
-      
       {/* Brand Mark - Stylized semicircle */}
       <path
         d="M60,15 C70,15 80,25 80,35 C80,45 70,55 60,55 L50,55 L50,15 L60,15 Z"

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
-import LogoSVG from "./LogoSVG.jsx";
+// import LogoSVG from "./LogoSVG.jsx";
+
+import LogoSVG1 from "../../src/assets/images/Brillaris-Logo.png";
 import { AlignJustify, X, Moon, Sun } from "lucide-react";
 import { scrollToElement } from "../lib/utils.js";
 import { useTheme } from "../components/ui/theme-provider.jsx";
@@ -8,7 +10,8 @@ import { useTheme } from "../components/ui/theme-provider.jsx";
 const navItems = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
-  { name: "Services", id: "services" },
+  { name: "OurSolution", id: "services" },
+  { name: "Services", id: "newservices" },
   { name: "Who We Are", id: "team" },
   { name: "Contact", id: "contact" },
 ];
@@ -53,8 +56,11 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <a href="#home" onClick={() => handleNavClick("home")} className="flex items-center">
+          {/* <a href="#home" onClick={() => handleNavClick("home")} className="flex items-center">
             <LogoSVG className="h-12" />
+          </a> */}
+          <a href="#home" onClick={() => handleNavClick("home")} className="flex items-center">
+            <img src={LogoSVG1} alt="Logo" className="h-20" />
           </a>
           
           {/* Desktop Navigation */}
@@ -74,7 +80,7 @@ const Header = () => {
             ))}
             
             {/* Theme Toggle */}
-            <Button
+            {/* <Button
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -86,7 +92,7 @@ const Header = () => {
                 <Moon className="h-4 w-4 text-accent" />
               )}
               <span className="sr-only">Toggle theme</span>
-            </Button>
+            </Button> */}
           </nav>
           
           {/* Mobile Menu Button */}

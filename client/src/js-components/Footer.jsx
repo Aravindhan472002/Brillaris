@@ -1,7 +1,9 @@
 import React from "react";
 import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/button";
-import LogoSVG from "./LogoSVG.jsx";
+// import LogoSVG from "./LogoSVG.jsx";
+import LogoSVG1 from "../../src/assets/images/Brillaris-Logo.png";
+
 import { scrollToElement } from "../lib/utils.js";
 import { Send } from "lucide-react";
 import { motion } from "framer-motion";
@@ -39,7 +41,7 @@ const Footer = () => {
           className="grid md:grid-cols-4 gap-8"
         >
           <div className="md:col-span-1">
-            <LogoSVG className="h-12 mb-4" />
+            <img src={LogoSVG1} alt="Brillaris Logo" className="h-23 mb-4" />
             <p className="text-gray-300 mb-4">
               Where innovation meets inspiration.
             </p>

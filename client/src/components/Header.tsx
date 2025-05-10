@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import LogoSVG from "@/assets/LogoSVG";
+// import LogoSVG from "@/assets/LogoSVG";
+import LogoSVG1 from "@/assets/images/Brillaris-Logo.png";
 import { AlignJustify, X, Moon, Sun } from "lucide-react";
 import { scrollToElement } from "@/lib/utils";
 import { useTheme } from "@/components/ui/theme-provider";
@@ -8,7 +9,7 @@ import { useTheme } from "@/components/ui/theme-provider";
 const navItems = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
-  { name: "Services", id: "services" },
+  { name: "OurSolution", id: "oursolution" },
   { name: "Who We Are", id: "team" },
   { name: "Contact", id: "contact" },
 ];
@@ -54,7 +55,11 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <a href="#home" onClick={() => handleNavClick("home")} className="flex items-center">
-            <LogoSVG className="h-12" />
+            <img src={LogoSVG1} alt="Brillaris Logo" className="h-10 w-auto" />
+            {/* <LogoSVG className="h-10 w-auto" /> */}
+            <span className="ml-2 text-xl font-bold text-primary dark:text-white">
+              Brillaris
+            </span>
           </a>
           
           {/* Desktop Navigation */}
